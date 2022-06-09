@@ -1,0 +1,20 @@
+Version 4
+
+
+Version 3
+[x] We should Initialize the todos variable with objects
+[x] The add function should add objects
+[x] The edit function should edit objects
+
+Version 2
+[x] It should have a function to add a Todo
+[x] It should have a function to edit a Todo
+[x] It should have a function to remove a Todo
+
+
+Version 1
+[x] It should have a place to store Todos
+[x] It should have a way to display Todos
+[x] It should have a way to add a Todo
+[x] It should have a way to edit a Todo
+[x] It should have a way to remove a Todo
