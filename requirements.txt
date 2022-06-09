@@ -1,5 +1,5 @@
 Version 4
-
+[x] It should have a function to Toggle a Todo
 
 Version 3
 [x] We should Initialize the todos variable with objects
