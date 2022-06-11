@@ -69,6 +69,33 @@
           console.log(todos[i]);
         }
       }
+
+      function toggleAll(){
+        //find out if everything is true
+        // how many todos are there in total?
+
+
+        // how many todos are completed.... 
+        // Test each todo to find out
+
+        var completedTodos = 0;
+
+        for ( var i = 0; i < todos.lenght; i++) {
+          if (todos[i].completed === true) {
+            completedTodos++;
+          }
+        }
+
+        // if everything is true
+
+        if (completedTodos === todos.length){
+          // change everything to false
+          for ( var i = 0; i < todos.length; i++){
+            todos[i].completed = false;
+          }
+        }
+        displayTodos();
+      }
       
     </script>
   </body>
