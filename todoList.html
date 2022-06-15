@@ -70,7 +70,7 @@
         }
       }
 
-      function toggleAll(){
+  
         //find out if everything is true
         // how many todos are there in total?
 
@@ -78,21 +78,38 @@
         // how many todos are completed.... 
         // Test each todo to find out
 
-        var completedTodos = 0;
+        function toggle(position){
+    if (todos[position].completed === true){
+      todos[position].completed = false;
+    }else {
+      todos[position].completed = true;
+    }
+    displayTodos();
+  }
+ 
 
-        for ( var i = 0; i < todos.lenght; i++) {
-          if (todos[i].completed === true) {
+      //[] It should have a function for toggling all todos.
+        
+        
+
+        function toggleAll(){
+
+          var completedTodos = 0; 
+
+          for (var i = 0; i < todos.length; i++){
+          if (todos[i].completed === true){
             completedTodos++;
           }
         }
 
-        // if everything is true
-
         if (completedTodos === todos.length){
-          // change everything to false
-          for ( var i = 0; i < todos.length; i++){
+          for (var i = 0; i < todos.length; i++){
             todos[i].completed = false;
-          }
+          } 
+        }else{
+          for (var i = 0; i < todos.length; i++){
+            todos[i].completed = true;
+          } 
         }
         displayTodos();
       }
