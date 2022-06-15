@@ -6,6 +6,9 @@
   </head>
 
   <body>
+
+    <button id="display-todos-button">Display Todos</button>
+
     <script>
       
       //var todos = ['Item 1', 'Item 2', 'Item 3'];
@@ -113,7 +116,12 @@
         }
         displayTodos();
       }
-      
+
+      // document.getElementById('display-todos-button');
+
+      var displayTodosButton = document.getElementById('display-todos-button');
+
+      displayTodosButton.addEventListener('click', displayTodos);
     </script>
   </body>
 </html>
